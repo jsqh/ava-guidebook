@@ -1,0 +1,12 @@
+# 忽略文件
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
+vendor/
+.bundle/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+_site/
+Gemfile.lock

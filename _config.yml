@@ -1,0 +1,41 @@
+# GitHub Pages 配置
+title: "AVA 智能体系统使用手册"
+description: "AVA 桌面级智能体系统的完整使用指南"
+baseurl: ""
+url: "https://[your-username].github.io"
+
+# 主题配置
+theme: minima
+
+# 插件
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO 设置
+author: "AVA Team"
+lang: "zh-CN"
+
+# Markdown 设置
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# 导航设置
+header_pages:
+  - README.md
+
+# 排除文件
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - "*.gemspec"
+  - "*.gem"
