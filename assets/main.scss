@@ -1,0 +1,121 @@
+---
+---
+
+@import "minima";
+
+:root {
+  --ava-bg: #f4efe6;
+  --ava-panel: rgba(255, 255, 255, 0.78);
+  --ava-panel-border: rgba(69, 54, 35, 0.12);
+  --ava-text: #20170f;
+  --ava-muted: #6f6254;
+  --ava-accent: #c76b2b;
+  --ava-accent-strong: #9b4716;
+  --ava-accent-soft: rgba(199, 107, 43, 0.12);
+}
+
+body {
+  color: var(--ava-text);
+  background:
+    radial-gradient(circle at top left, rgba(199, 107, 43, 0.16), transparent 28%),
+    radial-gradient(circle at right top, rgba(15, 89, 106, 0.12), transparent 25%),
+    linear-gradient(180deg, #fbf8f3 0%, var(--ava-bg) 100%);
+}
+
+.site-header {
+  background: rgba(251, 248, 243, 0.84);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(69, 54, 35, 0.08);
+}
+
+.site-title,
+.site-title:visited {
+  color: var(--ava-text);
+}
+
+.site-nav .page-link {
+  color: var(--ava-muted);
+}
+
+.page-content {
+  padding: 2.5rem 0 4rem;
+}
+
+.home-hero {
+  padding: 3rem;
+  border: 1px solid var(--ava-panel-border);
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(255, 248, 240, 0.78));
+  box-shadow: 0 18px 60px rgba(37, 24, 9, 0.08);
+}
+
+.home-hero__eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--ava-accent-strong);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.home-hero__title {
+  margin: 0;
+  font-size: clamp(2.2rem, 5vw, 4.4rem);
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+}
+
+.home-hero__description {
+  max-width: 42rem;
+  margin: 1rem 0 0;
+  color: var(--ava-muted);
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.home-body {
+  margin-top: 2rem;
+  padding: 2rem 2.25rem;
+  border: 1px solid rgba(69, 54, 35, 0.1);
+  border-radius: 24px;
+  background: var(--ava-panel);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 36px rgba(37, 24, 9, 0.06);
+}
+
+.home-body > :first-child {
+  margin-top: 0;
+}
+
+.home-body h2 {
+  margin-top: 2rem;
+  color: var(--ava-text);
+  font-size: 1.25rem;
+}
+
+.home-body ul {
+  padding-left: 1.2rem;
+}
+
+.home-body a {
+  color: var(--ava-accent-strong);
+}
+
+.home-body a:hover {
+  color: var(--ava-accent);
+}
+
+.post,
+.page-content .wrapper > .page-heading,
+.post-content,
+.page-content .wrapper {
+  color: var(--ava-text);
+}
+
+@media screen and (max-width: 800px) {
+  .home-hero,
+  .home-body {
+    padding: 1.5rem;
+    border-radius: 20px;
+  }
+}
