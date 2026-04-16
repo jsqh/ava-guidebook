@@ -11,14 +11,10 @@
         <li class="nav-tree__item">
           <a href="/" class="nav-tree__link {% if page.url == '/' %}active{% endif %}">首页</a>
         </li>
-        <li class="nav-tree__item">
-          <a href="/README.html" class="nav-tree__link {% if page.url == '/README.html' %}active{% endif %}">介绍</a>
-        </li>
         
         <li class="nav-tree__section">
           <div class="nav-tree__group-title">系统配置</div>
           <ul class="nav-tree__group">
-            <li><a href="/system-configuration/" class="nav-tree__link {% if page.url contains 'system-configuration' %}active{% endif %}">概览</a></li>
             <li><a href="/system-configuration/environment-config.html" class="nav-tree__link {% if page.url contains 'environment-config' %}active{% endif %}">基础环境配置</a></li>
             <li><a href="/system-configuration/agent-identity.html" class="nav-tree__link {% if page.url contains 'agent-identity' %}active{% endif %}">定义 Agent 身份</a></li>
             <li><a href="/system-configuration/model-search.html" class="nav-tree__link {% if page.url contains 'model-search' %}active{% endif %}">模型引擎与联网</a></li>
@@ -32,7 +28,6 @@
         <li class="nav-tree__section">
           <div class="nav-tree__group-title">工作区</div>
           <ul class="nav-tree__group">
-            <li><a href="/workspace/" class="nav-tree__link {% if page.url contains 'workspace' and page.url == '/workspace/' %}active{% endif %}">概览</a></li>
             <li><a href="/workspace/file-management.html" class="nav-tree__link {% if page.url contains 'file-management' %}active{% endif %}">浏览与管理文件</a></li>
             <li><a href="/workspace/file-operations.html" class="nav-tree__link {% if page.url contains 'file-operations' %}active{% endif %}">文件快捷操作</a></li>
             <li><a href="/workspace/view-edit.html" class="nav-tree__link {% if page.url contains 'view-edit' %}active{% endif %}">查看与编辑</a></li>
@@ -42,7 +37,6 @@
         <li class="nav-tree__section">
           <div class="nav-tree__group-title">智能体协作</div>
           <ul class="nav-tree__group">
-            <li><a href="/agent-collaboration/" class="nav-tree__link {% if page.url contains 'agent-collaboration' and page.url == '/agent-collaboration/' %}active{% endif %}">概览</a></li>
             <li><a href="/agent-collaboration/agent-plaza.html" class="nav-tree__link {% if page.url contains 'agent-plaza' %}active{% endif %}">智能体广场</a></li>
             <li><a href="/agent-collaboration/agent-team.html" class="nav-tree__link {% if page.url contains 'agent-team' %}active{% endif %}">智能体团队</a></li>
           </ul>
@@ -51,7 +45,6 @@
         <li class="nav-tree__section">
           <div class="nav-tree__group-title">群聊协作</div>
           <ul class="nav-tree__group">
-            <li><a href="/group-chat/" class="nav-tree__link {% if page.url contains 'group-chat' and page.url == '/group-chat/' %}active{% endif %}">概览</a></li>
             <li><a href="/group-chat/creating-chats.html" class="nav-tree__link {% if page.url contains 'creating-chats' %}active{% endif %}">创建群聊</a></li>
             <li><a href="/group-chat/managing-members.html" class="nav-tree__link {% if page.url contains 'managing-members' %}active{% endif %}">成员管理</a></li>
             <li><a href="/group-chat/collaboration-monitoring.html" class="nav-tree__link {% if page.url contains 'collaboration-monitoring' %}active{% endif %}">协作监控</a></li>
@@ -62,7 +55,6 @@
         <li class="nav-tree__section">
           <div class="nav-tree__group-title">跨端远程协作</div>
           <ul class="nav-tree__group">
-            <li><a href="/platform-connection/" class="nav-tree__link {% if page.url contains 'platform-connection' and page.url == '/platform-connection/' %}active{% endif %}">概览</a></li>
             <li><a href="/platform-connection/overview.html" class="nav-tree__link {% if page.url contains 'overview' %}active{% endif %}">平台连接总览</a></li>
             <li><a href="/platform-connection/dingtalk-config.html" class="nav-tree__link {% if page.url contains 'dingtalk' %}active{% endif %}">定钉钉配置</a></li>
           </ul>
@@ -71,7 +63,6 @@
         <li class="nav-tree__section">
           <div class="nav-tree__group-title">应用场景</div>
           <ul class="nav-tree__group">
-            <li><a href="/use-cases/" class="nav-tree__link {% if page.url contains 'use-cases' and page.url == '/use-cases/' %}active{% endif %}">概览</a></li>
             <li><a href="/use-cases/scene1-skill-automation.html" class="nav-tree__link {% if page.url contains 'scene1' %}active{% endif %}">场景一：技能自动化</a></li>
             <li><a href="/use-cases/scene2-visualization.html" class="nav-tree__link {% if page.url contains 'scene2' %}active{% endif %}">场景二：可视化看板</a></li>
             <li><a href="/use-cases/scene3-dynamic-roles.html" class="nav-tree__link {% if page.url contains 'scene3' %}active{% endif %}">场景三：动态角色</a></li>
