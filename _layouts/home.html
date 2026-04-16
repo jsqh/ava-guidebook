@@ -7,9 +7,12 @@
 
     {%- include header.html -%}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <div class="home">
+    <div class="layout-wrapper">
+      {%- include sidebar.html -%}
+
+      <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+          <div class="home">
           <section class="home-hero">
             <p class="home-hero__eyebrow">AVA Guidebook</p>
             <h1 class="home-hero__title">{{ site.title | escape }}</h1>
@@ -34,7 +37,8 @@
           {%- endif -%}
         </div>
       </div>
-    </main>
+      </main>
+    </div>
 
     {%- include footer.html -%}
 
